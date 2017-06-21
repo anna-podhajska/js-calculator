@@ -1,0 +1,31 @@
+.number {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  border: 1px solid black;
+  display: inline-block;
+}
+.operator {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+#equation {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  display: block;
+  margin-top: 1rem;
+}
+
+#result {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  display: block;
+}
