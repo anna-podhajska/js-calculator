@@ -7,15 +7,23 @@ $("table").click(function (event) {
   switch(event.target.id){
 
     case "equals":
-      var result = eval(equation);
-      $("#result").html(result);
-      equation = "";
+
+      try {
+        var result = eval(equation);
+        $("#result").html(result);
+        equation = "";
+      } catch (exeption) {
+        if (exeption instanceof SyntaxError) {
+            alert("invalid expression");
+        }
+      }
       break;
 
     case "AC":
       equation = "";
       $("#result").html("0");
       break;
+
 
     case "CE":
       equation = equation.substr(0, equation.length-1);
@@ -63,6 +71,11 @@ $("table").click(function (event) {
         equation += event.target.innerText;
       }
       break;
+
+  }
+
+  if (equation.length > 35 ) {
+    alert("really? hey, shorter equation is actionable");
   }
 
   $("#equation").html(equation);

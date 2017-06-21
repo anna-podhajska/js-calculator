@@ -1,7 +1,7 @@
 $(document).ready(function() {
 // code code below
 
-  var equation = " ";
+  var equation = "";
 
 
   $( "div" ).click(function(event) {
