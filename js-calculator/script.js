@@ -137,11 +137,11 @@ $("#lessFun").click(function () {
 
 
   // sound
-  function play() {
-    var audioElement = document.createElement('audio');
-        audioElement.setAttribute('src', 'sounds/click.wav');
-    audioElement.play();
-    }
+  // function play() {
+  //   var audioElement = document.createElement('audio');
+  //       audioElement.setAttribute('src', 'sounds/click.wav');
+  //   audioElement.play();
+    // }
   // sound
 
 
